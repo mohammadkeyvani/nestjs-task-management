@@ -1,0 +1,78 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# Build output
+dist/
+build/
+.out/
+.cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+logs
+*.log
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.test
+.env.production
+.env.development
+.env.local
+
+# Coverage directory (for tests)
+coverage/
+
+# VSCode settings
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+
+# Mac system files
+.DS_Store
+
+# Linux system files
+.Trash-*
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Docker
+docker-compose.override.yml
+.docker/
+
+# Swagger / API docs
+swagger.json
+swagger.yaml
+
+# PM2
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Misc
+tmp/
+temp/
+*.swp
+*.swo
+
+# Prisma (if used)
+prisma/migrations/*/README.md
+
+# Optional: Ignore SQLite files (if Prisma with SQLite)
+*.db
+*.db-journal
