@@ -4,12 +4,12 @@ import { ConfigService } from '@nestjs/config';
 export const getDatabaseConfig = async (
   configService: ConfigService,
 ): Promise<TypeOrmModuleOptions> => ({
-  type: 'postgres',
-  host: 'localhost',
-  port: 5432,
-  username: 'postgres',
-  password: '1234',
-  database: 'taskmanagment',
-  autoLoadEntities: true,
-  synchronize: true,
+  type: configService.get<'postgres'>('db.type'),
+  host: configService.get<string>('db.host'),
+  port: configService.get<number>('db.port'),
+  username: configService.get<string>('db.username'),
+  password: configService.get<string>('db.password'),
+  database: configService.get<string>('db.database'),
+  autoLoadEntities: configService.get<boolean>('db.autoLoadEntity'),
+  synchronize: configService.get<boolean>('db.synchronize'),
 });

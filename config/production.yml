@@ -1,0 +1,15 @@
+db:
+  synchronize: false
+
+server:
+  port: 8080
+  host: 0.0.0.0
+
+db:
+  host: prod-db.local
+  username: produser
+  password: ${DB_PASSWORD}
+  database: proddb
+
+jwt:
+  expiresIn: 3600

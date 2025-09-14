@@ -1,0 +1,32 @@
+server:
+  port: 3000
+  host: localhost
+  globalPrefix: api
+  cors:
+    enabled: true
+    origin: '*'
+  swagger:
+    enabled: true
+    path: /docs
+
+db:
+  type: postgres
+  host: localhost
+  port: 5432
+  username: postgres
+  password: ${DB_PASSWORD}
+  database: taskmanagement
+  synchronize: false
+  logging: true
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiresIn: 3600
+
+cache:
+  enabled: true
+  ttl: 600
+
+features:
+  enableSignup: true
+  enablePayments: false
